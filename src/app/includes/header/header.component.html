@@ -1,0 +1,11 @@
+<p>header works!</p>
+<p>header works!</p>
+<p>{{'header.Home' | translate}}</p>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" >
+<div class="row">
+    <div class="col-md-6"></div>
+    <div class="col-md-6">
+        <p [class.active] ="switchLang == 'hi'" (click)="selectedLanguage('hi')">hindi</p>
+        <p [class.active] ="switchLang == 'en'" (click)="selectedLanguage('en')">english</p>
+    </div>
+</div>
